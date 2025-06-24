@@ -41,4 +41,9 @@ npm install
 # 3. Variables de entorno
 cp .env.example .env
 
+# 4. Iniciar servidor de desarrollo
+npm run dev
+```
 
+## 📌 Estado del Proyecto  
+🚧 **En Desarrollo Activo** 
