@@ -1,6 +1,6 @@
 # 🏥 Sistema de Gestión Veterinaria  
 
-Aplicación web para gestión integral de clínicas veterinarias desarrollada con React + TypeScript + Vite  
+Aplicación web moderna para la gestión de clínicas veterinarias, desarrollada con React, TypeScript y Vite. Este sistema ayuda a los profesionales veterinarios a gestionar historias clínicas, citas y operaciones diarias de la clínica de manera eficiente.
 
 ## 🚀 Características Principales  
 
@@ -40,3 +40,5 @@ npm install
 
 # 3. Variables de entorno
 cp .env.example .env
+
+
