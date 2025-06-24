@@ -36,41 +36,40 @@ export const App: React.FC<Props> = () => {
 
   return (
     <BrowserRouter>
-      {isAuthenticated && (
+      {isAuthenticated ? (
         <>
           <img 
-            src="../public/bg2.png" 
+            src="../public/bg3.png" 
             alt="fondo"
             className='home-background'/>
-          <Navbar 
+            <Navbar 
             onLogout={handleLogout} 
             userName={userName}
           />
-        </>
-      )}
-      <main className="content-container">
-        <div className="content">
-          <Routes>
-            {!isAuthenticated ? (
-              <Route path='/*' element={<Login onLogin={handleLogin}/>} />
-            ) : (
-              <>
+          <main className="content-container">
+            <div className="content">
+              <Routes>
                 <Route 
                   path='/' 
-                  element={<Home userName={userName}/>} />
+                  element={<Home userName={userName}/>} 
+                />
                 <Route 
                   path='/about' 
-                  element={<About />} />
+                  element={<About />} 
+                />
                 <Route 
                   path='/gallery' 
-                  element={<Gallery />} />
-
-              </>
-            )
-            }
-          </Routes>
-        </div>
-      </main> 
+                  element={<Gallery />} 
+                />
+              </Routes>
+            </div>
+          </main>
+        </>
+      ) : (
+        <Routes>
+          <Route path='/*' element={<Login onLogin={handleLogin}/>} />
+        </Routes>
+      )}
     </BrowserRouter>
   )
 }
