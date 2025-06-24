@@ -33,7 +33,7 @@ Aplicación web moderna para la gestión de clínicas veterinarias, desarrollada
 
 ```bash
 # 1. Clonar repositorio
-git clone https://github.com/tu-clinica/sistema-veterinario.git](https://github.com/Sebasdj/ts-first-website.git
+git clone https://github.com/Sebasdj/ts-first-website.git
 
 # 2. Instalar dependencias
 npm install
